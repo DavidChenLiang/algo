@@ -1,0 +1,77 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BITREE_H	bitree.h	2;"	d
+BiTree	bitree.h	/^}BiTree;$/;"	t	typeref:struct:BiTree_
+BiTreeNode	bitree.h	/^}BiTreeNode;$/;"	t	typeref:struct:BiTreeNode_
+BiTreeNode_	bitree.h	/^typedef struct BiTreeNode_{$/;"	s
+BiTree_	bitree.h	/^typedef struct BiTree_{$/;"	s
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-g -Wall$/;"	m
+DIRECT_H	directls.h	19;"	d
+Directory	directls.h	/^}Directory;$/;"	t	typeref:struct:Directory_
+Directory_	directls.h	/^typedef struct Directory_{$/;"	s
+FRAME_H	frames.h	19;"	d
+LIST_H	list.h	19;"	d
+List	list.h	/^}List;$/;"	t	typeref:struct:List_
+ListElmt	list.h	/^}ListElmt;$/;"	t	typeref:struct:ListElmt_
+ListElmt_	list.h	/^typedef struct ListElmt_{$/;"	s
+List_	list.h	/^typedef struct List_{$/;"	s
+OBJ	Makefile	/^OBJ=$/;"	m
+SEARCH_H	search.h	19;"	d
+SORT_H	sort.h	19;"	d
+SPELL_H	spell.h	19;"	d
+SPELL_SIZE	spell.h	20;"	d
+alloc_frame	frames.c	/^alloc_frame(List *frames){$/;"	f
+b	directls.c	/^extern int b =3;$/;"	v
+bisearch	bisearch.c	/^bisearch(void *sorted,$/;"	f
+bitree_data	bitree.h	27;"	d
+bitree_is_eob	bitree.h	25;"	d
+bitree_is_leaf	bitree.h	26;"	d
+bitree_left	bitree.h	28;"	d
+bitree_right	bitree.h	29;"	d
+bitree_root	bitree.h	24;"	d
+bitree_size	bitree.h	23;"	d
+compare	bitree.h	/^	int (*compare)(const void *key1,const void *key2);$/;"	m	struct:BiTree_
+compare_dir	directls.c	/^compare_dir(const void *key1, const void *key2){$/;"	f	file:
+compare_int	qksort.c	/^compare_int(const void *int1, const void *int2){$/;"	f	file:
+compare_str	spell.c	/^compare_str(const void *str1, const void *str2){$/;"	f	file:
+ctsort	ctsort.c	/^ctsort(int *data, int size, int k){$/;"	f
+data	bitree.h	/^	void *data;$/;"	m	struct:BiTreeNode_
+data	list.h	/^    void *data;$/;"	m	struct:ListElmt_
+destroy	bitree.h	/^	void (*destroy)(void *data);$/;"	m	struct:BiTree_
+destroy	list.h	/^    void (*destroy)(void *data);$/;"	m	struct:List_
+directls	directls.c	/^directls(const char *path, Directory **dir){$/;"	f
+free_frame	frames.c	/^free_frame(List *frames, int frame_number){$/;"	f
+head	list.h	/^    ListElmt *head;$/;"	m	struct:List_
+issort	issort.c	/^issort(void *data, int size, int esize,int (*compare)(const void *key1,$/;"	f
+left	bitree.h	/^	struct BiTreeNode_ *left;$/;"	m	struct:BiTreeNode_	typeref:struct:BiTreeNode_::BiTreeNode_
+list_data	list.h	47;"	d
+list_destroy	list.c	/^list_destroy(List *list){$/;"	f
+list_head	list.h	41;"	d
+list_init	list.c	/^list_init(List *list, void (*destroy)(void *data)){$/;"	f
+list_ins_next	list.c	/^list_ins_next(List *list, ListElmt *element, const void *data){$/;"	f
+list_is_head	list.h	44;"	d
+list_is_tail	list.h	45;"	d
+list_next	list.h	48;"	d
+list_rem_next	list.c	/^list_rem_next(List *list, ListElmt *element, void **data){$/;"	f
+list_size	list.h	40;"	d
+list_tail	list.h	42;"	d
+main	directls.c	/^main ( int argc, char *argv[] )$/;"	f
+main	frames.c	/^main ( int argc, char *argv[] )$/;"	f
+main	main.c	/^main ( int argc, char *argv[] )$/;"	f
+main	spell.c	/^main ( int argc, char *argv[] )$/;"	f
+match	list.h	/^    int (*match)(const void *key1, const void *key2);$/;"	m	struct:List_
+name	directls.h	/^        char    name[MAXNAMLEN + 1];$/;"	m	struct:Directory_
+next	list.h	/^    struct ListElmt_ *next;$/;"	m	struct:ListElmt_	typeref:struct:ListElmt_::ListElmt_
+partition	qksort.c	/^partition(void *data, int esize, int i, int k, int (*compare)(const void *key1, const void *key2)){$/;"	f	file:
+qksort	qksort.c	/^qksort(void *data, int size, int esize, int i, int k, int (*compare)(const void *key1, const void *key2)){$/;"	f
+right	bitree.h	/^	struct BiTreeNode_ *right;$/;"	m	struct:BiTreeNode_	typeref:struct:BiTreeNode_::BiTreeNode_
+root	bitree.h	/^	BiTreeNode *root;$/;"	m	struct:BiTree_
+size	bitree.h	/^	int size;$/;"	m	struct:BiTree_
+size	list.h	/^    int size;$/;"	m	struct:List_
+spell	spell.c	/^spell(char (*dictionary)[SPELL_SIZE],$/;"	f
+tail	list.h	/^    ListElmt *tail;$/;"	m	struct:List_
